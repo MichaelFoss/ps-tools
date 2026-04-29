@@ -1,10 +1,16 @@
-param(
-    [Parameter(Position=0, Mandatory=$true)]
-    [string]$Pattern
-)
+function grep {
+    [CmdletBinding()]
+    param (
+        [Parameter(Position = 0, Mandatory = $true)]
+        [string]$Pattern,
 
-process {
-    if ($_ -match $Pattern) {
-        $_
+        [Parameter(ValueFromPipeline = $true)]
+        [string]$InputObject
+    )
+
+    process {
+        if ($InputObject -match $Pattern) {
+            $InputObject
+        }
     }
 }
