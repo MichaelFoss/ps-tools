@@ -12,3 +12,6 @@ else {
 # Clipboard utilities
 . "$ScriptRoot\scripts\pbcopy.ps1"
 . "$ScriptRoot\scripts\pbpaste.ps1"
+
+# Editing aliases
+. "$ScriptRoot\scripts\vim.ps1"
