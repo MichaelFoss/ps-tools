@@ -15,3 +15,6 @@ else {
 
 # Editing aliases
 . "$ScriptRoot\scripts\vim.ps1"
+
+# Search utilities
+. "$ScriptRoot\scripts\grep.ps1"
