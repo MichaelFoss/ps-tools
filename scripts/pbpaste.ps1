@@ -1,0 +1,3 @@
+function pbpaste {
+    Get-Clipboard
+}
